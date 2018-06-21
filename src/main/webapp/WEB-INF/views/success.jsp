@@ -12,7 +12,7 @@
   <a href="menu">メニュー</a>
 </div>
 <div>
-  <a href="history">履歴</a>
+  <a href="success">履歴</a>
 </div>
 </body>
 </html>

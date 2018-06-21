@@ -5,15 +5,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserInfo {
 
-	private Integer userId;
+
 	private String userName;
 
-	public Integer getUserId() {
-		return userId;
-	}
-	public void setUserId(Integer userId) {
-		this.userId = userId;
-	}
 
 	public String getUserName() {
 		return userName;

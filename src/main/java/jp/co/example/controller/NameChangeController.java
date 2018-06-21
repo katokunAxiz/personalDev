@@ -11,7 +11,7 @@ import jp.co.example.entity.UserInfo;
 import jp.co.example.service.UserService_PD;
 
 @Controller
-public class NameChange {
+public class NameChangeController {
 	@Autowired
 	private UserInfo userInfo;
 	@Autowired

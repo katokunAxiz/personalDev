@@ -14,11 +14,20 @@
 <c:if test="${not empty changed}">
   <p class="changed">${fn:escapeXml(changed)}</p>
 </c:if>
+
+<c:if test="${not empty changed}">
+  <p class="changed">${fn:escapeXml(changed)}</p>
+</c:if>
+
+
 <div>
   <a href="timer">今からする</a>
 </div>
 <div>
-  <a href="">たいかい</a>
+  <a href="nemeChange">名前を変える</a>
+</div>
+<div>
+  <a href="question">チャレンジを変える</a>
 </div>
 <div>
   <a href="delete">たいかい</a>

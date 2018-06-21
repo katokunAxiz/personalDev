@@ -19,10 +19,10 @@ public class InsertController_PD {
 	@Autowired
 	private UserService_PD userService;
 
-	@RequestMapping("/register")
+	@RequestMapping("/Challenge")
 	public String form() {
 
-		return "register";
+		return "challenge";
 	}
 
 
