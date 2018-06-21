@@ -8,6 +8,7 @@
 </head>
 <body>
 <div>
+  <p>ご利用ありがとうございました</p>
   <a href="top">top</a>
 </div>
 </body>

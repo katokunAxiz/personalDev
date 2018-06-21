@@ -7,11 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+あなたは偉いぞ
 <div>
-  <a href="register">TOP</a>
+  <a href="menu">メニュー</a>
 </div>
 <div>
-  <a href="register">履歴</a>
+  <a href="history">履歴</a>
 </div>
 </body>
 </html>

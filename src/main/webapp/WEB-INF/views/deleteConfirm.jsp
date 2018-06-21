@@ -7,11 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+本当に退会しますか？
 <div>
   <a href="menu">だめ</a>
 </div>
 <div>
-  <a href="deleteResult">おｋ</a>
+  <a href="deleter" >おｋ</a>
 </div>
 </body>
 </html>

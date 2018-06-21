@@ -22,7 +22,7 @@
 <form:form action="top" method="post" >
   <fieldset class="label-60">
     <div>
-      <label>ニックネーム</label><input type="text" name="id" value="${fn:escapeXml(param.name)}">
+      <label>ニックネーム</label><input type="text" name="name" value="${fn:escapeXml(param.name)}">
     </div>
 
   </fieldset>
