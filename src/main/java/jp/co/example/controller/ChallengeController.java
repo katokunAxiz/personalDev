@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jp.co.example.entity.ChallengeInfo;
+import jp.co.example.entity.Challengebunn;
 
 
 @Controller
@@ -18,6 +19,9 @@ public class ChallengeController {
 
 	@Autowired
 	private ChallengeInfo challengeInfo;
+
+	@Autowired
+	private Challengebunn challengebunn;
 
 /*	@Autowired
 	private UserService_PD userService;*/
@@ -50,9 +54,9 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object1, "", "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-
-
-				model.addAttribute("challengeCleaning", object1 + "を一分で片付けてください");
+				String challenge= object1 + "を一分で片付けてください";
+				challengebunn.setChallenge(challenge);
+				model.addAttribute("challengeCleaning", object1 + challenge);
 				return "challenge";
 			}
 
@@ -67,8 +71,9 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object2, "", "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-
-				model.addAttribute("challengeCleaning", object2 + "を一分で片付けてください");
+				String challenge= object2 + "を一分で片付けてください";
+				challengebunn.setChallenge(challenge);
+				model.addAttribute("challengeCleaning",challenge);
 				return "challenge";
 			}
 
@@ -83,7 +88,9 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object3, "", "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				model.addAttribute("challengeCleaning", object3 + "を一分で片付けてください");
+				String challenge= object3 + "を一分で片付けてください";
+				challengebunn.setChallenge(challenge);
+				model.addAttribute("challengeCleaning", challenge);
 				return "challenge";
 			}
 			//二つだけ片付けるものが入力された場合
@@ -98,8 +105,9 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object1, object2, "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-
-				model.addAttribute("challengeCleaning", object1 + "," + object2 + "を一分で片付けてください");
+				String challenge= object1 + "," + object2+ "を一分で片付けてください";
+				challengebunn.setChallenge(challenge);
+				model.addAttribute("challengeCleaning", challenge);
 				return "challenge";
 			}
 
@@ -114,8 +122,9 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object2, object3, "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-
-				model.addAttribute("challengeCleaning", object2 + "," + object3 + "を一分で片付けてください");
+				String challenge= object2 + "," + object3 + "を一分で片付けてください";
+				challengebunn.setChallenge(challenge);
+				model.addAttribute("challengeCleaning", challenge);
 				return "challenge";
 			}
 
@@ -130,7 +139,9 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object1, object3, "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				model.addAttribute("challengeCleaning", object1 + "," + object3 + "を一分で片付けてください");
+				String challenge= object1 + "," + object3 + "を一分で片付けてください";
+				challengebunn.setChallenge(challenge);
+				model.addAttribute("challengeCleaning", challenge);
 				return "challenge";
 			}
 			//三つ全てに片付けるものが入力された場合
@@ -145,8 +156,9 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object1, object2, object3, purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-
-				model.addAttribute("challengeCleaning", object1 + "," + object2 + "を一分で片付けてください");
+				String challenge= object1 + ","+object2 + "," + object3 + "を一分で片付けてください";
+				challengebunn.setChallenge(challenge);
+				model.addAttribute("challengeCleaning", challenge);
 				return "challenge";
 
 			} else{

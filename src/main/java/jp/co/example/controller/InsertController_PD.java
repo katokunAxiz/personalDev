@@ -8,21 +8,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jp.co.example.entity.UserInfo;
-import jp.co.example.service.UserService_PD;
-//import jp.co.example.service.InsertService;
 
 @Controller
 public class InsertController_PD {
 
 	@Autowired
 	private UserInfo userInfo;
-	@Autowired
-	private UserService_PD userService;
+/*	@Autowired
+	private UserService_PD userService;*/
 
-	@RequestMapping("/Challenge")
+	@RequestMapping("/register")
 	public String form() {
 
-		return "challenge";
+		return "register";
 	}
 
 
@@ -34,7 +32,7 @@ public class InsertController_PD {
 			model.addAttribute("errmsg", "ニックネームが入力されていません");
 			return "register";
 		} else {
-			userService.register(nickName);
+			/*userService.register(nickName);*/
 			userInfo.setUserName(nickName);
 			model.addAttribute("nickname", nickName);
 			return "question";

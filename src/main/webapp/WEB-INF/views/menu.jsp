@@ -11,12 +11,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<c:if test="${not empty changed}">
-  <p class="changed">${fn:escapeXml(changed)}</p>
+<c:if test="${not empty purpose}">
+  <p class="changed">${fn:escapeXml(purpose)}</p>
 </c:if>
 
-<c:if test="${not empty changed}">
-  <p class="changed">${fn:escapeXml(changed)}</p>
+<c:if test="${not empty challenge}">
+  <p class="changed">${fn:escapeXml (challenge1)}</p>
 </c:if>
 
 
