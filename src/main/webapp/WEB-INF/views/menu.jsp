@@ -15,8 +15,11 @@
   <p class="changed">${fn:escapeXml(purpose)}</p>
 </c:if>
 
-<c:if test="${not empty challenge}">
-  <p class="changed">${fn:escapeXml (challenge1)}</p>
+<c:if test="${not empty trigger}">
+  <p class="changed">${fn:escapeXml (trigger)}</p>
+</c:if>
+<c:if test="${not empty top}">
+  <p class="changed">${fn:escapeXml (top)}</p>
 </c:if>
 
 
@@ -24,7 +27,7 @@
   <a href="timer">今からする</a>
 </div>
 <div>
-  <a href="nemeChange">名前を変える</a>
+  <a href="nameChange">名前を変える</a>
 </div>
 <div>
   <a href="question">チャレンジを変える</a>

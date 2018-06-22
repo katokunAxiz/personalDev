@@ -19,7 +19,7 @@
   <p class="error">${fn:escapeXml(errmsg)}</p>
 </c:if>
 
-<form:form action="top" method="post" >
+<form:form action="menu" method="post" >
   <fieldset class="label-60">
     <div>
       <label>ニックネーム</label><input type="text" name="name" value="${fn:escapeXml(param.name)}">

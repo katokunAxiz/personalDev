@@ -21,10 +21,10 @@
 		<fieldset class="label-60">
 			<div>
 				<div id=object>
-					片づけしたいものは何ですか？ <label>その1</label><input type="text" name="object"
+					片づけしたいものは何ですか？ <label>その1</label><input type="text" name="object1"
 						value="${fn:escapeXml(param.object1)}"> <label>その2</label><input
-						type="text" name="object" value="${fn:escapeXml(param.object2)}">
-					<label>その3</label><input type="text" name="object"
+						type="text" name="object2" value="${fn:escapeXml(param.object2)}">
+					<label>その3</label><input type="text" name="object3"
 						value="${fn:escapeXml(param.object3)}">
 				</div>
 				<div id=purpose>
@@ -42,10 +42,6 @@
 		</fieldset>
 		<input type="submit" value="OK">
 	</form:form>
-	<div>
 
-		<div></div>
-		<a href="condition">これで</a>
-	</div>
 </body>
 </html>

@@ -16,8 +16,15 @@ public class DeleteController {
 		@Autowired
 		private UserService_PD userService;
 
-		@RequestMapping("/deleter")
+		@RequestMapping("/delete")
 		public String form() {
+
+			return "deleteConfirm";
+		}
+
+
+		@RequestMapping("/deleter")
+		public String delete() {
 
 			userService.delete(userInfo.getUserName());
 			userInfo.setUserName(null);

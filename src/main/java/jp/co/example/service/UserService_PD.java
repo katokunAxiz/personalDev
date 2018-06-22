@@ -2,6 +2,7 @@ package jp.co.example.service;
 
 import java.util.List;
 
+import jp.co.example.entity.ChallengeInfo;
 import jp.co.example.entity.CleaningInfo;
 
 public interface UserService_PD {
@@ -15,6 +16,7 @@ public interface UserService_PD {
 			String trigger,
 			String date,
 			String user_name);
+	public ChallengeInfo FindLateChallenge(String name);
 	public int delete(String name);
 	public int nameChange(String newName,String oldName);
 	public int registerHistory(

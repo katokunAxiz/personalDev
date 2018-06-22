@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import jp.co.example.dao.UserDao;
+import jp.co.example.entity.ChallengeInfo;
 import jp.co.example.entity.CleaningInfo;
 import jp.co.example.service.UserService_PD;
 
@@ -24,6 +25,11 @@ public class UserServiceImpl_PD implements UserService_PD {
 	@Override
 	public int register(String nickName) {
 		return userDao.register(nickName);
+	}
+
+	@Override
+	public ChallengeInfo FindLateChallenge(String name){
+		return userDao.FindLateChallenge(name);
 	}
 	@Override
 	public int registerChallenge(

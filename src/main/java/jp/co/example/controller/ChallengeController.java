@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jp.co.example.entity.ChallengeInfo;
-import jp.co.example.entity.Challengebunn;
 
 
 @Controller
@@ -20,8 +19,7 @@ public class ChallengeController {
 	@Autowired
 	private ChallengeInfo challengeInfo;
 
-	@Autowired
-	private Challengebunn challengebunn;
+
 
 /*	@Autowired
 	private UserService_PD userService;*/
@@ -52,11 +50,22 @@ public class ChallengeController {
 				challengeInfo.setPurpose(purpose);
 				challengeInfo.setTrigger(trigger);
 
+				String purpose1 = challengeInfo.getPurpose() + "に、";
+				String trigger1 = challengeInfo.getTrigger() + "を見たら、1分間で";
+				String object = challengeInfo.getObject1() + "を片付けてください。";
+
+				if (purpose1 != null && !(purpose1.isEmpty())) {
+					model.addAttribute("purpose", purpose1);
+				}
+				if (trigger1 != null && !(trigger1.isEmpty())) {
+					model.addAttribute("trigger", trigger1);
+				}
+				if (object != null && !(object.isEmpty())) {
+					model.addAttribute("object", object);
+				}
 /*				userService.registerChallenge(object1, "", "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				String challenge= object1 + "を一分で片付けてください";
-				challengebunn.setChallenge(challenge);
-				model.addAttribute("challengeCleaning", object1 + challenge);
+
 				return "challenge";
 			}
 
@@ -71,9 +80,19 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object2, "", "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				String challenge= object2 + "を一分で片付けてください";
-				challengebunn.setChallenge(challenge);
-				model.addAttribute("challengeCleaning",challenge);
+				String purpose1 = challengeInfo.getPurpose() + "に、";
+				String trigger1 = challengeInfo.getTrigger() + "を見たら、1分間で";
+				String object = challengeInfo.getObject1() + "を片付けてください。";
+
+				if (purpose1 != null && !(purpose1.isEmpty())) {
+					model.addAttribute("purpose", purpose1);
+				}
+				if (trigger1 != null && !(trigger1.isEmpty())) {
+					model.addAttribute("trigger", trigger1);
+				}
+				if (object != null && !(object.isEmpty())) {
+					model.addAttribute("object", object);
+				}
 				return "challenge";
 			}
 
@@ -88,9 +107,19 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object3, "", "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				String challenge= object3 + "を一分で片付けてください";
-				challengebunn.setChallenge(challenge);
-				model.addAttribute("challengeCleaning", challenge);
+				String purpose1 = challengeInfo.getPurpose() + "に、";
+				String trigger1 = challengeInfo.getTrigger() + "を見たら、1分間で";
+				String object = challengeInfo.getObject1() + "を片付けてください。";
+
+				if (purpose1 != null && !(purpose1.isEmpty())) {
+					model.addAttribute("purpose", purpose1);
+				}
+				if (trigger1 != null && !(trigger1.isEmpty())) {
+					model.addAttribute("trigger", trigger1);
+				}
+				if (object != null && !(object.isEmpty())) {
+					model.addAttribute("object", object);
+				}
 				return "challenge";
 			}
 			//二つだけ片付けるものが入力された場合
@@ -105,9 +134,19 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object1, object2, "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				String challenge= object1 + "," + object2+ "を一分で片付けてください";
-				challengebunn.setChallenge(challenge);
-				model.addAttribute("challengeCleaning", challenge);
+				String purpose1 = challengeInfo.getPurpose() + "に、";
+				String trigger1 = challengeInfo.getTrigger() + "を見たら、2分間で";
+				String object = challengeInfo.getObject1() + "と"+challengeInfo.getObject2()+"を片付けてください。";
+
+				if (purpose1 != null && !(purpose1.isEmpty())) {
+					model.addAttribute("purpose", purpose1);
+				}
+				if (trigger1 != null && !(trigger1.isEmpty())) {
+					model.addAttribute("trigger", trigger1);
+				}
+				if (object != null && !(object.isEmpty())) {
+					model.addAttribute("object", object);
+				}
 				return "challenge";
 			}
 
@@ -122,9 +161,19 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object2, object3, "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				String challenge= object2 + "," + object3 + "を一分で片付けてください";
-				challengebunn.setChallenge(challenge);
-				model.addAttribute("challengeCleaning", challenge);
+				String purpose1 = challengeInfo.getPurpose() + "に、";
+				String trigger1 = challengeInfo.getTrigger() + "を見たら、2分間で";
+				String object = challengeInfo.getObject1() + "と"+challengeInfo.getObject2()+"を片付けてください。";
+
+				if (purpose1 != null && !(purpose1.isEmpty())) {
+					model.addAttribute("purpose", purpose1);
+				}
+				if (trigger1 != null && !(trigger1.isEmpty())) {
+					model.addAttribute("trigger", trigger1);
+				}
+				if (object != null && !(object.isEmpty())) {
+					model.addAttribute("object", object);
+				}
 				return "challenge";
 			}
 
@@ -139,9 +188,19 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object1, object3, "", purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				String challenge= object1 + "," + object3 + "を一分で片付けてください";
-				challengebunn.setChallenge(challenge);
-				model.addAttribute("challengeCleaning", challenge);
+				String purpose1 = challengeInfo.getPurpose() + "に、";
+				String trigger1 = challengeInfo.getTrigger() + "を見たら、2分間で";
+				String object = challengeInfo.getObject1() + "と"+challengeInfo.getObject2()+"を片付けてください。";
+
+				if (purpose1 != null && !(purpose1.isEmpty())) {
+					model.addAttribute("purpose", purpose1);
+				}
+				if (trigger1 != null && !(trigger1.isEmpty())) {
+					model.addAttribute("trigger", trigger1);
+				}
+				if (object != null && !(object.isEmpty())) {
+					model.addAttribute("object", object);
+				}
 				return "challenge";
 			}
 			//三つ全てに片付けるものが入力された場合
@@ -156,9 +215,19 @@ public class ChallengeController {
 
 /*				userService.registerChallenge(object1, object2, object3, purpose, trigger, challengeInfo.getDate(),
 						userInfo.getUserName());*/
-				String challenge= object1 + ","+object2 + "," + object3 + "を一分で片付けてください";
-				challengebunn.setChallenge(challenge);
-				model.addAttribute("challengeCleaning", challenge);
+				String purpose1 = challengeInfo.getPurpose() + "に、";
+				String trigger1 = challengeInfo.getTrigger() + "を見たら、3分間で";
+				String object = challengeInfo.getObject1() + "と"+challengeInfo.getObject2()+"、"+challengeInfo.getObject3()+"を片付けてください。";
+
+				if (purpose1 != null && !(purpose1.isEmpty())) {
+					model.addAttribute("purpose", purpose1);
+				}
+				if (trigger1 != null && !(trigger1.isEmpty())) {
+					model.addAttribute("trigger", trigger1);
+				}
+				if (object != null && !(object.isEmpty())) {
+					model.addAttribute("object", object);
+				}
 				return "challenge";
 
 			} else{

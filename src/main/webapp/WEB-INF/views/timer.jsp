@@ -9,7 +9,9 @@
 </head>
 <body>
 
-
+<div>
+  <a href="menu">メニュー</a>
+</div>
 
 
 <div>

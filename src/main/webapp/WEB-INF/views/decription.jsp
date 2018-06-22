@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+こんにちは～説明するよー
 <div>
   <a href="register">新規登録はこちら</a>
 </div>

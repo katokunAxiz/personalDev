@@ -36,7 +36,7 @@ public class HistoryController {
 		//現在の日付を取得
 		Date date = new Date();
 		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
-		challengeInfo.setDate(sdf1.format(date));
+		challengeInfo.setFormatDate(sdf1.format(date));
 		//cleaningに保存する
 		userService.registerHistory(
 							challengeInfo.getObject1(),
@@ -44,7 +44,7 @@ public class HistoryController {
 							challengeInfo.getObject3(),
 							challengeInfo.getPurpose(),
 							challengeInfo.getTrigger(),
-							challengeInfo.getDate(),
+							challengeInfo.getFormatDate(),
 							userInfo.getUserName());
 
 		List<CleaningInfo> result=userService.Find20(userInfo.getUserName());

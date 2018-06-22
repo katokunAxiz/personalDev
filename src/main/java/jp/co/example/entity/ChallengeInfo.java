@@ -1,5 +1,7 @@
 package jp.co.example.entity;
 
+import java.util.Date;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -11,14 +13,28 @@ public class ChallengeInfo {
 	private String object3;
 	private String purpose;
 	private String trigger;
-	private String date;
+	private Date date;
+	private String formatDate;
 	private String user_name;
+
+
+
+	public String getUser_name() {
+		return user_name;
+	}
+
+	public void setUser_name(String user_name) {
+		this.user_name = user_name;
+	}
+
+
+
 
 	public int getChallenge_id() {
 		return challenge_id;
 	}
 
-	public void setCleaning_id(int challenge_id) {
+	public void setChallenge_id(int challenge_id) {
 		this.challenge_id = challenge_id;
 	}
 
@@ -62,20 +78,20 @@ public class ChallengeInfo {
 		this.trigger = trigger;
 	}
 
-	public String getDate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setDate(String date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 
-	public String getUser_name() {
-		return user_name;
+	public String getFormatDate() {
+		return formatDate;
 	}
 
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
+	public void setFormatDate(String formatDate) {
+		this.formatDate = formatDate;
 	}
 
 
